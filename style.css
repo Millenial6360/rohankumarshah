@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+}
+header{
+    padding: 10px 30px;
+    grid-area: 1/1/1/7;
+    font-size: 30px;
+    
+}
+.header-left{
+    float: left;
+
+
+}
+.header-right{
+    float: right;
+    padding: 60px;
+
+}
+.header-right a{
+    padding:20px;  
+}
+* {box-sizing: border-box;}
