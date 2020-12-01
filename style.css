@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nerko+One&display=swap');
+
+
 .container{
     display: grid;
     margin: auto;
     grid-gap: 10px;
-    grid-template: repeat(8, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
 }
 header{
     padding: 10px 10px;
@@ -55,6 +57,10 @@ aside{
     background-color: #ADADAD;
     font-size: 25px;   
     padding: 40px;
+    
+}
+
+aside .intro{
     text-align: center;
 }
 
@@ -63,8 +69,8 @@ aside{
     margin-top: 20px;
 }
 .img{
-    width: 12rem;
-    height: 12rem;
+    width: 12.5%;
+    height: auto;
     padding: 50px;
     margin: 5px;
     border: 10px solid #501B1D;
@@ -72,8 +78,31 @@ aside{
 }
 section{
     text-align: center;
-    grid-area: 5/1/7/7;
+    grid-area: 5/1/6/7;
 }
 section h2{
     font-size: 40px;
+    margin:0;
+}
+.certificates{
+    text-align: left;
+}
+#contact{
+    grid-area: 6/1/7/7;
+    background-color: rgb(65, 175, 175); 
+    
+}
+
+#contact p{
+    margin-right: 50px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.foot{
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    margin: 5px;
+    
 }
