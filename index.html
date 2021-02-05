@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg" type="image/icon type">
+    <title>Rohan Kumar Shah</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+      .skill-icon-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+      }
+      .skill-icon {
+        width: 9rem;
+        height: 9rem;
+        margin: 0.5rem;
+      }
+      </style>
+       <script>
+        /*function check(e)
+        {
+        alert(e.keyCode);
+        }*/
+        document.onkeydown = function(e) {
+                if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                    alert('not allowed');
+                }
+                return false;
+        };
+        </script>
+
+</head>
+<body oncontextmenu="return false">
+    <!-- HEADER -->
+    <header class="text-gray-600 body-font" style="background-color: #1A1A1D; border: 0.15rem solid #a3a1a2;">
+      
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <img src="logo.jpg" width= "100rem" height="100rem" style="display: inline-block; border-radius: 60%">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <span class="ml-3 text-xl" style ="font-family: 'Source Sans Pro', sans-serif; font-size: 2rem; font-weight: bold; color: #950740">
+                Rohan Kumar Shah
+            </span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" style="padding: 0.5rem;" >
+            <a class="mr-5 hover:text-gray-900" href= "#home" style="font-size: 1.3rem; font-weight: bold; color: #BC986A; padding: 0.5rem" onMouseOver="this.style.backgroundColor='#BC986A' , this.style.color='#1A1A1D', this.style.borderRadius='1rem'  " onMouseOut="this.style.backgroundColor='#1A1A1D', this.style.color='#BC986A' " >Home</a>
+            <a class="mr-5 hover:text-gray-900" href= "#about" style="font-size: 1.3rem; font-weight: bold; color: #BC986A; padding: 0.5rem" onMouseOver="this.style.backgroundColor='#BC986A' , this.style.color='#1A1A1D', this.style.borderRadius='1rem'  " onMouseOut="this.style.backgroundColor='#1A1A1D', this.style.color='#BC986A' ">About</a>
+            <a class="mr-5 hover:text-gray-900" href= "#skills" style="font-size: 1.3rem; font-weight: bold; color: #BC986A; padding: 0.5rem" onMouseOver="this.style.backgroundColor='#BC986A' , this.style.color='#1A1A1D', this.style.borderRadius='1rem'  " onMouseOut="this.style.backgroundColor='#1A1A1D', this.style.color='#BC986A' ">Skills</a>
+            <a class="mr-5 hover:text-gray-900" href= "#contact" style="font-size: 1.3rem; font-weight: bold; color: #BC986A; padding: 0.5rem" onMouseOver="this.style.backgroundColor='#BC986A' , this.style.color='#1A1A1D', this.style.borderRadius='1rem'  " onMouseOut="this.style.backgroundColor='#1A1A1D', this.style.color='#BC986A' ">Contact</a>
+            <a class="mr-5 hover:text-gray-900" href= "#certifications" style="font-size: 1.3rem; font-weight: bold; color: #BC986A; padding: 0.5rem" onMouseOver="this.style.backgroundColor='#BC986A' , this.style.color='#1A1A1D', this.style.borderRadius='1rem'  " onMouseOut="this.style.backgroundColor='#1A1A1D', this.style.color='#BC986A' ">Certificates</a>
+          </nav>
+        </div>
+      </header>
+<!-- ABOUT -->
+      <section id="about" class="text-gray-600 body-font" style="background-image: url('background1.jpg');background-color: #46464d ; background-blend-mode: multiply; background-size:cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="edit1.jpg" style="border-radius: 5% 20%;">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" style="color: #1A1A1D;">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" style="font-weight: bold; color:rgb(187, 183, 183);">About Me
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="mb-8 leading-relaxed" style="font-weight: bold; color:rgb(187, 183, 183);">Hi, I am Rohan Kumar Shah, a Bachelor of Technology from Delhi Technological University, Delhi, India specializing in Computer Engineering. I am a Front Web Developer based in New Delhi, India. I am well-versed in HTML, CSS, Javascript & React-Redux. I also know the principles of Test-Driven Development and Deployment of Websites.
+              <br><br>I have worked with many programming languages like C, C++, Java & Python at a beginner level. I have a good command of Git, Github, and Linux kernel. I am also learning about Cybersecurity these days. I am keen on Computer Science and very interested in android development. This static site has been build by me using HTML, CSS, and Javascript.
+              <br>Any suggestions or messages are most welcome on my social media. Links are given in the Contact panel in the footer.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr>
+<!-- SKILLS -->
+      <section id="skills" class="text-gray-600 body-font" style="background-image: url('background2.jpg');background-color: #5c5c64 ; background-blend-mode: multiply; background-size:cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; align-items: center;  border: 0.5rem solid #200638;" >
+        <div class="container px-5 py-24 mx-auto" style=" padding-top: 0; padding-bottom: 2rem;">
+          <div class="flex flex-col text-center w-full mb-20" style="margin-bottom: 1rem;" >
+            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900" style="font-size: 2rem; font-weight: bold; padding-top: 2rem; padding-bottom: 0.5rem;color: #7395AE;">Skills Proficiency</h1>
+          </div>
+          <div class="skill-icon-area">
+            <img class="skill-icon" src="git1.png" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+            <img class="skill-icon" src="github1.jpg" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+            <img class="skill-icon" src="java.png" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+            <img class="skill-icon" src="linux.png" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+            <img class="skill-icon" src="html.png" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+            <img class="skill-icon" src="css.png" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+            <img class="skill-icon" src="javascript.png" alt="" style="border-radius: 5% 20%; border: 0.5rem solid #9d2ed1">
+          </div>
+        </div>
+      </section>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="text-gray-600 body-font" style="background-image: url('background.jpg');background-color: #46464d ; background-blend-mode: multiply; background-size:cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap" style="padding-top: 6rem; padding-bottom: 6rem; color: white;">
+    <div class="flex w-full mb-20 flex-wrap" style="margin-bottom: 1rem;">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4" style=" color: white; font-size: 3rem;">Certificates</h1>
+      <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">I am showing some of my certificates that are from CodeCadmy and Cisco Acadmy. You may check my all of the certificates on my LinkedIn Profile, Link is given in the Contact panel in the footer</p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="Css_certificate.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="react_certificate.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="linux_certificate.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="frontend_certificate.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="javascript_certificate.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="git_certificate.jpg">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+      <footer class="text-gray-600 body-font"  style="background-color: #000000;" id= "contact; border-right: 1rem solid #190061; border-left:1rem solid ; border-bottom:1rem solid ;">
+        <div id ="contact" class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <span class="ml-3 text-xl" style="color: #3500D3; font-weight: bold;">Rohan  Kumar  Shah</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"  style="color: #3500D3; font-weight: bold;">Made With Love --
+            <a class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"  style="color: #3500D3"> in India</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+
+            <a  style="color: #3500D3" class="text-gray-500" target= _blank>
+                <p>Follow me on -</p>
+              </svg>
+            </a>
+
+            <a  style="color: #3500D3" class="text-gray-500" href= "https://www.facebook.com/millenial6360/" target= _blank>
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a  style="color: #3500D3" class="ml-3 text-gray-500" href= "https://twitter.com/Shah6360" target= _blank>
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a  style="color: #3500D3" class="ml-3 text-gray-500" href= "https://www.instagram.com/millenial6360/" target= _blank>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a style="color: #3500D3" class="ml-3 text-gray-500" href="https://www.linkedin.com/in/rohan-kumar-shah6360/" target= _blank>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>
